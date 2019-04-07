@@ -3,6 +3,7 @@ package me.redned.remotechests;
 import me.redned.remotechests.commands.RemoteChestCommand;
 import me.redned.remotechests.utils.Utils;
 
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -50,6 +51,8 @@ public class RemoteChests extends JavaPlugin {
         }
 
         getCommand("remotechest").setExecutor(new RemoteChestCommand(this));
+
+        new Metrics(this);
     }
 
     @Override
