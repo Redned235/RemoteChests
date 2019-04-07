@@ -1,0 +1,11 @@
+name: ${project.name}
+main: me.redned.remotechests.RemoteChests
+version: ${project.version}
+api-version: 1.13
+author: Redned
+description: ${project.description}
+commands:
+  remotechest:
+    description: Main command for RemoteChests.
+    usage: /remotechest help
+    aliases: [rc]

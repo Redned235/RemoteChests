@@ -1,0 +1,10 @@
+# ----------------------------------- #
+#             Remote Chests           #
+# ----------------------------------- #
+
+# This config is the main config for storing remote chests
+chests:
+  diamondblocks:
+    location: world,25,90,-216
+    owner: 9a0879bc-c29e-4f7e-a18f-1c8200dd47f1
+    restricted: false
