@@ -1,3 +1,5 @@
+RemoteChests
+=============
 This plugin allows you to easily access chests placed at any location with a simple command. 
 You can easily able to enable or disable chests that can be access remotely. 
 A handy tool for admins if you find yourself always going back and forth opening chests.
