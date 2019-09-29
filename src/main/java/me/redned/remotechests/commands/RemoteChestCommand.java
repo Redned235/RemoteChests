@@ -79,6 +79,10 @@ public class RemoteChestCommand implements CommandExecutor {
             }
 
             Block block = remoteChest.getLocation().getWorld().getBlockAt(remoteChest.getLocation());
+            if (!block.getChunk().isLoaded()) {
+                block.getChunk().load();
+            }
+
             if (!(block.getState() instanceof Chest)) {
                 player.sendMessage(ChatColor.RED + "The block located at " + Utils.getFancyLocString(remoteChest.getLocation()) + " is not a chest.");
                 return true;
